@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class booking {
     public static void main(String[] args) {
         
-        Scanner scanner = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
         String[] kursi = new String[10];
         
         while (true){
@@ -12,7 +12,7 @@ public class booking {
             System.out.println("2. Booking kursi");
             System.out.println("3. Keluar");
             System.out.print(">> ");
-            int opsi = scanner.nextInt();
+            int opsi = input.nextInt();
 
             if (opsi == 3){
                 System.out.println("Terimakasih!");
@@ -24,6 +24,8 @@ public class booking {
                     System.out.println("\nKursi yang sudah di-booking: ");
                     System.out.println("'O' = Sudah diisi");
                     System.out.println("'X' = Belum diisi\n");
+
+                    System.out.println("\nPilihan kursi: ");
                     for (int i = 0; i < kursi.length; i++) {
                         if (kursi[i] == null) {
                             int angka = i+1;
@@ -40,6 +42,8 @@ public class booking {
                     System.out.println("\nKursi yang tersedia di bioskop: ");
                     System.out.println("'O' = Sudah diisi");
                     System.out.println("'X' = Belum diisi\n");
+
+                    System.out.println("\nPilihan kursi: ");
                     for (int i = 0; i < kursi.length; i++) {
                         if (kursi[i] == null) {
                             int angka = i+1;
@@ -52,7 +56,7 @@ public class booking {
                     }
 
                     System.out.print("Kursi mana yang anda ingin booking? : ");
-                    int pilihanKursi = scanner.nextInt();
+                    int pilihanKursi = input.nextInt();
                     if (pilihanKursi > kursi.length || pilihanKursi < 1) {
                         System.out.println("\nInput tidak valid!");
                     }
@@ -68,10 +72,7 @@ public class booking {
                             continue;
                         }
                     }
-                
-                default:
-                    break;
-            }
+                }
             }
 
             
