@@ -18,6 +18,18 @@ public class booking {
                 break;
             }
             else {
+                switch (opsi) {
+                case 1:
+                    for (int i = 0; i < kursi.length; i++) {
+                        if (kursi[i] == null) {
+                            System.out.println("[   ]");
+                        }
+                        else {
+                            System.out.println("[ X ]");
+                        }
+                    }
+                    break;
+                
                 
 
 
