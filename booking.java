@@ -18,6 +18,10 @@ public class booking {
                 System.out.println("Terimakasih!");
                 break;
             }
+            else if (opsi > 3 || opsi < 1){
+                System.out.println("\nInvalid input!");
+                continue;
+            }
             else {
                 switch (opsi) {
                 case 1:
