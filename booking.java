@@ -29,10 +29,19 @@ public class booking {
                         }
                     }
                     break;
-                
-                
 
-
+                case 2:
+                    for (int i = 0; i < kursi.length; i++) {
+                        if (kursi[i] == null) {
+                            int angka = i+1;
+                            System.out.println("Kursi ke-" + angka + ". : " + "[   ]");
+                        }
+                        else {
+                            int angka = i+1;
+                            System.out.println("Kursi ke-" + angka + ". " + "[ X ]");
+                        }
+                    }
+                
                 default:
                     break;
             }
